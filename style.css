@@ -1,0 +1,51 @@
+/*
+Theme Name: All About Dogs
+Theme URI: https://williampellas.com/allaboutdogs
+Author: William Pellas
+Author URI: https://williampellas.com/
+Description: Theme for portfolio project.
+Requires at least: 5.6
+Tested up to: 5.6
+Requires PHP: 8.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+.body, html {
+    background-color: #ececec;
+}
+.menu-navigation-container {
+    height: 100%;
+}
+.menu {
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+.menu-item > a:hover {
+    color: #0D734D!important;
+}
+.wp-block-image {
+    margin: 2rem 0;
+}
+
+/* Category */
+.cat-item:hover {
+    color: #731F0D;
+}
+
+@media screen 
+and (max-width: 1023px) {
+    .menu {
+        padding: 8px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+    }
+}
