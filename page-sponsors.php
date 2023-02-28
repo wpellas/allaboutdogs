@@ -1,8 +1,3 @@
-<?php 
-/*
-Template Name: Sponsors
-*/
-?>
 <?php get_header() ?>
 
 <main class="h-full w-full px-[4%] sm:px-[6%] md:px-[10%] bg-primary-special pt-8 pb-36 flex justify-center">
