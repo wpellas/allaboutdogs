@@ -1,6 +1,6 @@
 <?php get_header() ?>
-<!-- single news -->
-<main class="h-full w-full px-[4%] sm:px-[6%] md:px-[10%] bg-primary-special">
+<!-- Single news -->
+<main class="h-full w-full px-[4%] sm:px-[6%] md:px-[10%] pt-8 pb-36 bg-primary-special">
     <?php while (have_posts()): the_post(); ?>
     <div class="w-full h-full flex justify-between gap-4 my-4">
         <!-- Category Cards -->
@@ -16,6 +16,7 @@
             <!-- Category Title -->
             <div class="text-4xl text-primary-300"><?php get_template_part('components/main_title', null, the_category('')) ?></div>
             <div class="hidden w-full h-full md:flex flex-col flex-wrap gap-4 mt-4">
+                <!-- Lists out all other posts in the specific category -->
                 <?php
                     if ($newsPosts->have_posts()) :
                     while ($newsPosts->have_posts()) : $newsPosts->the_post(); ?>

@@ -48,7 +48,7 @@ function create_posttype() {
     'rewrite' => array('slug' => 'employees'),
     'show_in_rest' => true,
     'menu_icon'             => 'dashicons-admin-users',
-    'supports' => array( 'title', 'thumbnail' )
+    'supports' => array( 'title', 'thumbnail')
   )
     );
 }
@@ -97,22 +97,9 @@ function my_theme_enqueue_style() {
   wp_enqueue_script(
     'script',
     get_stylesheet_directory_uri() . '/assets/script.js',
-    // 'module',
-  );
-  wp_enqueue_style(
-    'stylesheet',
-    get_stylesheet_directory_uri() . '/node_modules/simplelightbox/dist/simplelight-box.css'
   );
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_style');
-
-// function add_data_attribute($tag, $handle) {
-//   if ( 'script' !== $handle )
-//    return $tag;
-
-//   return str_replace( ' src', ' type="module"', $tag );
-// }
-// add_filter('script_loader_tag', 'add_data_attribute', 10, 2);
 //////////////////////////////////////
 
 // Tailwind Setup

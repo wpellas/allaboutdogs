@@ -1,4 +1,5 @@
 <div class="h-full w-full md:w-5/6">
+    <!-- Prints full category posts -->
     <div class="w-full h-full flex flex-wrap">
         <?php while (have_posts()): the_post(); ?>
         <div class="m-auto w-full h-full bg-white border border-solid shadow-md p-6 mb-16">

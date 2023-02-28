@@ -107,7 +107,7 @@
                 $employeeTerms = get_the_terms( get_the_ID(), 'employee-category' );
             ?>
             <!-- Employee Card -->
-            <?php get_template_part('components/employee_card') ?>
+            <?php get_template_part('components/employee_card', null, $employeeTerms) ?>
             <!-- Endwhile -->
             <?php endwhile;
             else :

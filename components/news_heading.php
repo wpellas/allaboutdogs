@@ -3,6 +3,7 @@
     <div class="h-full w-full md:w-5/6">
         <!-- Category Title -->
         <div class="text-4xl md:text-6xl lg:text-8xl text-primary-300">
+            <!-- Defaults to Newsfeed if no category is found -->
             <?php 
             if ( $args['categoryTitle'] ) {
                 echo the_category();

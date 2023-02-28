@@ -6,7 +6,7 @@
             <h1 class="w-full text-primary-300 text-xl sm:text-xl md:text-2xl"><?php the_title(); ?></h1>
             <!-- Title -->
             <div class="w-full text-secondary-300 text-xs sm:text-sm md:text-base uppercase pb-2">
-                <div><?= get_field('employee_title'); ?></div>
+                <div><?= $args[0]->name; ?></div>
             </div>
             <!-- Biography -->
             <div class="text-xs md:text-sm pb-2">
@@ -14,7 +14,7 @@
             </div>
             <!-- Email -->
             <div class="">
-                <a class="text-xs sm:text-sm md:text-base text-secondary-300" href="mailto:<?= get_field('employee_email')?>"><?= get_field('employee_email')?></a>
+                <a class="text-x md:text-sm text-secondary-300" href="mailto:<?= get_field('employee_email')?>"><?= get_field('employee_email')?></a>
             </div>
         </div>
     </div>

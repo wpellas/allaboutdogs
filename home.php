@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <!-- /news/ -->
-<main class="h-full w-full px-[4%] sm:px-[6%] md:px-[10%] bg-primary-special py-12 flex justify-center">
+<main class="h-full w-full px-[4%] sm:px-[6%] md:px-[10%] bg-primary-special pt-8 pb-36 flex justify-center">
     <!-- Category page -->
     <!-- Wrapper -->
     <div class="h-full w-full md:w-[95%] lg:w-[87%] xl:w-[80%]">

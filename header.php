@@ -11,9 +11,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header class="sticky top-0 w-full px-[4%] sm:px-[6%] md:px-[10%] leading-8 text-center bg-white shadow-lg text-primary-300 z-30">
+<header class="sticky top-0 w-full px-[4%] sm:px-[6%] md:px-[10%] leading-6 text-center bg-white shadow-lg text-primary-300 z-30">
     <!-- Navbar -->
-    <div class="text-lg flex pb-2 sm:pb-4 md:pb-6 pt-4 sm:pt-6 md:pt-8">
+    <div class="text-lg flex p-2">
         <div  class="basis-5/6 md:basis-3/6 flex justify-start items-center">
             <a href="<?= site_url() ?>"><img class="h-[64px] md:h-[100px] w-auto relative pr-8" src="<?= get_stylesheet_directory_uri() . '/assets/image/logo.svg' ?>" alt="Logo"></a>
             <h1 class="relative text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl hover:text-secondary-100"><a href="<?= site_url() ?>">All About Dogs</a></h1>
