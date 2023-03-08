@@ -1,5 +1,5 @@
 <?php get_header() ?>
-
+<!-- home page -->
 <main class="bg-primary-special">
 
     <!-- Hero -->
@@ -27,7 +27,7 @@
         
         <?php the_content(); ?>
     <?php endwhile;
-    wp_reset_postdata(); ?>  
+    wp_reset_postdata(); ?>
     </section>
 
     <!-- Newsfeed -->
@@ -81,9 +81,8 @@
                     // Nothing
                     endif;
                     wp_reset_postdata();
-                ?>
+            ?>
         </div>
-        
     </div>
     </section>
 
@@ -116,12 +115,8 @@
                 wp_reset_postdata();
             ?>
         </div>
-
     </div>
     </section>
-    
-    
-    
 </main>
 
 <?php get_footer(); ?>

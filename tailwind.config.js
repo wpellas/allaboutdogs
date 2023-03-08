@@ -18,6 +18,10 @@ module.exports = {
             "secondary-100": "#BF2300",
             "secondary-300": "#731F0D",
             "secondary-500": "#330E06",
+      },
+      fontFamily: {
+        "montserrat": ["Montserrat", "sans-serif"],
+        "raleway": ["Raleway", "sans-serif"]
       }
     }
   }

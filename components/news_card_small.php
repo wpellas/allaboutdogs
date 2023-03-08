@@ -1,6 +1,6 @@
-<div class="flex items-center w-full h-96 bg-white border border-solid shadow-md flex-none">
+<div class="flex items-center w-full h-36 bg-white border border-solid shadow-md flex-none">
     <!-- Text -->
-    <div class="h-full w-2/3 p-2">
+    <div class="h-full w-2/3 p-4">
         <!-- Title and Article name -->
         <div class="w-full h-full flex flex-col justify-around">
         <div class="w-full flex flex-wrap text-secondary-300 text-sm uppercase">

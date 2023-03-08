@@ -1,7 +1,7 @@
 <!-- Large Card -->
 <div class="hidden md:flex items-center justify-between w-full h-72 bg-white border border-solid shadow-md flex-none">
     <!-- Text -->
-    <div class="h-full w-4/6 lg:w-2/3 xl:w-1/2 p-2">
+    <div class="h-full w-4/6 lg:w-2/3 xl:w-1/2 p-4">
         <div class="w-full h-full flex flex-col justify-center">
             <!-- Title and Article name -->
             <div class="w-full flex flex-row text-secondary-300 text-base lg:text-lg xl:text-[1.17rem] uppercase">
@@ -20,7 +20,7 @@
     </div>
     <!-- Image -->
     <div class="h-full w-2/6 lg:w-1/3 xl:w-1/2">
-        <a class="w-full h-full" href="<?php the_permalink(); ?>"><img class="w-full h-full object-cover" src="<?=get_the_post_thumbnail_url();?>" alt="item"></a>
+        <a class="w-full h-full" href="<?php the_permalink(); ?>"><img class="p-4 w-full h-full object-scale-down" src="<?=get_the_post_thumbnail_url();?>" alt="item"></a>
     </div>
 </div>
 <!-- Small Card -->
@@ -43,6 +43,7 @@
         </div>
     </div>
     <!-- Image -->
-    <a class="w-1/2 h-full" href="<?php the_permalink(); ?>"><div class="h-full w-full bg-center bg-cover" style="background-image:url('<?=get_the_post_thumbnail_url();?>');"></div>
-    </a>
+    <div class="w-1/2 h-full">
+        <a class="w-full h-full" href="<?php the_permalink(); ?>"><img class="p-4 w-full h-full object-scale-down" src="<?=get_the_post_thumbnail_url();?>" alt="item"></a>
+    </div>
 </div>

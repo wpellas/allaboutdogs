@@ -15,20 +15,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .body, html {
     background-color: #ececec;
 }
+
+/* Navigation */
 .menu-navigation-container {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .menu {
-    padding: 8px;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    width: 100%;
+    text-align: center;
+}
+.menu-item > a {
+    font-family: "Raleway", sans-serif;
 }
 .menu-item > a:hover {
     color: #0D734D!important;
 }
+
+/* Other */
 .wp-block-image {
     margin: 2rem 0;
 }
@@ -41,11 +57,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @media screen 
 and (max-width: 1023px) {
     .menu {
-        padding: 8px;
+        padding: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: start;
+        gap: 0px;
+    }
+    .menu-item {
+        padding: 2rem;
+        text-align: left;
+    }
+    .menu-item:hover {
+        background-color: #0E8056;
+        color: #ececec!important;
+    }
+    .menu-item > a:hover {
+        color: #ececec!important;
+    }
+    .menu-item:active {
+        background-color: #0E8056;
+        color: #ececec!important;
+    }
+    .menu-item > a:active {
+        color: #ececec!important;
     }
 }

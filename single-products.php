@@ -53,7 +53,7 @@
         <!-- Recommended Products -->
         <div class="w-full h-full pt-16 pb-36">
             <?php
-                $newsPosts = new WP_Query([
+                $newProducts = new WP_Query([
                     'post_type'=>'products',
                     'posts_per_page'=>3,
                     'tax_query'=>array(
@@ -77,8 +77,8 @@
                 <div class="py-4 h-full flex flex-wrap md:flex-nowrap justify-between items-center gap-4">
                 <?php
                 // Runs have_posts() on $newsPosts
-                if ($newsPosts->have_posts()) :
-                    while ($newsPosts->have_posts()) : $newsPosts->the_post(); 
+                if ($newProducts->have_posts()) :
+                    while ($newProducts->have_posts()) : $newProducts->the_post(); 
                      ?>
                         <!-- Large Card -->
                         <div class="flex items-center w-full md:basis-1/2 h-full bg-white border border-solid shadow-md">

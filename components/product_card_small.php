@@ -1,6 +1,6 @@
 <div class="flex items-center w-full h-56 md:h-72 bg-white border border-solid shadow-md">
     <!-- Text -->
-    <div class="h-full w-1/2 p-2">
+    <div class="h-full w-1/2 p-4">
         <div class="w-full h-full flex flex-col justify-center">
             <!-- Title and Article name -->
             <div class="w-full block lg:flex flex-row text-secondary-300 text-sm xs:text-base sm:text-lg uppercase">
@@ -17,6 +17,5 @@
         </div>
     </div>
     <!-- Image -->
-    <a class="w-1/2 h-full" href="<?php the_permalink(); ?>"><div class="h-full w-full bg-center bg-cover" style="background-image:url('<?=get_the_post_thumbnail_url();?>');"></div>
-    </a>
+    <a class="w-1/2 h-full" href="<?php the_permalink(); ?>"><img class="p-4 w-full h-full object-scale-down" src="<?=get_the_post_thumbnail_url();?>" alt="item"></a>
 </div>

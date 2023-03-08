@@ -1,7 +1,7 @@
 <!-- Large Card -->
 <div class="hidden md:flex items-center justify-between w-full h-72 bg-white border border-solid shadow-md flex-none">
     <!-- Text -->
-    <div class="h-full w-4/6 lg:w-2/3 xl:w-1/2 p-2">
+    <div class="h-full w-4/6 lg:w-2/3 xl:w-1/2 p-4">
         <div class="w-full h-full flex flex-col justify-center">
             <!-- Title and Article name -->
             <div class="w-full flex flex-row text-secondary-300 text-base lg:text-lg xl:text-[1.17rem] uppercase">

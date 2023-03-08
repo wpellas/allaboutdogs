@@ -10,7 +10,7 @@ function add_nav_menus() {
 add_action('init', 'add_nav_menus');
 //////////////////////////////////////
 
-// Maximum post content length
+// Maximum excerpt content length
 function excerpt_length() {
   return 50;
 }
@@ -21,7 +21,7 @@ function excerpt_more() {
 add_filter('excerpt_more', 'excerpt_more', 21);
 //////////////////////////////////////
 
-// Products Page
+// Products and Employee posts
 function create_posttype() {
   register_post_type( 'products',
     array(
@@ -55,7 +55,7 @@ function create_posttype() {
 add_action( 'init', 'create_posttype' );
 //////////////////////////////////////
 
-// Custom Categories Category
+// Custom Categories (Taxonomies)
 function custom_taxonomies(){
     
     register_taxonomy( 'product-category', 'products', array(
